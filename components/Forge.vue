@@ -1,14 +1,19 @@
 <template>
-  <button @click="forge">
-    Forge Ingot
+  <button @click="clicked">
+    Forge Bronze
   </button>
 </template>
 
 <script>
 export default {
+  data () {
+    return {
+      isDisabled: false
+    }
+  },
   methods: {
-    forge () {
-      alert('Forged')
+    clicked () {
+
     }
   }
 }
